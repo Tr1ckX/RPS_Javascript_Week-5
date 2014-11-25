@@ -12,8 +12,9 @@ function Game(player1, player2) {
 };
 
 Game.prototype.winner = function() {
-  if (this.player2.pick == 'scissors') return this.player1;
-  if (this.player2.pick == 'paper') return this.player2;
+  var defeat = { 'rock': 'scissors', 'paper': 'rock', 'scissors': 'paper' }
 
-
+  if (defeat[this.player1.pick] == this.player2.pick) return this.player1 
+  if (this.player1.pick == this.player2.pick) return null
+  return this.player2
 };
