@@ -22,17 +22,14 @@ Game.prototype.winner = function() {
 
   if (this.player1.pick == this.player2.pick) return null
 
-  // if (defeat[this.player1.pick] == this.player2.pick) return this.player1
-
-
-
     array = defeat[this.player1.pick]
 
+    for (var i in array) {
 
+      if(array[i] === this.player2.pick){return this.player1}
 
-    for (var i in array)  //{if array[i] == this.player2.pick return this.player1}
-
-
+    }
 
   return this.player2
+
 };
