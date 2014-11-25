@@ -14,9 +14,25 @@ function Game(player1, player2) {
 
 Game.prototype.winner = function() {
 
-  var defeat = { 'rock': 'scissors', 'paper': 'rock', 'scissors': 'paper' }
+  var defeat = { 'rock': ['scissors', 'lizard'],
+                 'paper': ['rock', 'spock'],
+                 'scissors': ['paper', 'lizard'],
+                 'lizard': ['paper', 'spock'],
+                 'spock': ['scissors', 'rock'] }
 
-  if (defeat[this.player1.pick] == this.player2.pick) return this.player1
   if (this.player1.pick == this.player2.pick) return null
+
+  // if (defeat[this.player1.pick] == this.player2.pick) return this.player1
+
+
+
+    array = defeat[this.player1.pick]
+
+
+
+    for (var i in array)  //{if array[i] == this.player2.pick return this.player1}
+
+
+
   return this.player2
 };
