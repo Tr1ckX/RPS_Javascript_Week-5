@@ -55,7 +55,7 @@ Game.prototype.winner = function() {
 
     }
 
-  console.log (this.player1.pick + ' ' + this.verbs()[[this.player1.pick,this.player2.pick]] + ' '  + this.player2.pick);
+  console.log (this.player2.pick + ' ' + this.verbs()[[this.player2.pick,this.player1.pick]] + ' '  + this.player1.pick);
   return this.player2
 
 
