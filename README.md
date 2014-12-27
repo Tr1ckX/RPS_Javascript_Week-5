@@ -1,4 +1,4 @@
-Bookmark manager for everyone!
+RPS Javascript!
 ==========
 <div>
 <img src = https://img.shields.io/badge/%20-GitHub-orange.svg>
@@ -7,6 +7,8 @@ Bookmark manager for everyone!
 </div>
 <br>
 
-<h5> Fithth week at [Makers Academy](http://www.makersacademy.com) 
+<h5> Fifth week at [Makers Academy](http://www.makersacademy.com) 
 
-Using everything we learnt plus a little bit of database handling and CSS. Then publish it, what can be wrong?
+Entering to the world of Javascript.
+  - Rewriting the Rock Paper Scissors in Javascript
+  - Testing the code with Jasmine
