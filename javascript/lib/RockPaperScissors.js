@@ -25,6 +25,7 @@ Game.prototype.defeat = {
  'spock': ['scissors', 'rock']
 };
 
+
 Game.prototype.winner = function() {
 
 
