@@ -25,6 +25,22 @@ Game.prototype.defeat = {
  'spock': ['scissors', 'rock']
 };
 
+Game.prototype.verbs = function () {
+        var verb_hash = {};
+        verb_hash[['spock','rock']] = 'vaporises';
+        verb_hash[['spock','scissors']] = 'smashes';
+        verb_hash[['rock','scissors']] = 'smashes';
+        verb_hash[['rock','lizard']] = 'crushes';
+        verb_hash[['scissors','paper']] = 'cuts';
+        verb_hash[['scissors','lizard']] = 'decapitates';
+        verb_hash[['lizard','spock']] = 'poisons';
+        verb_hash[['lizard','paper']] = 'eats';
+        verb_hash[['paper','spock']] = 'disproves';
+        verb_hash[['paper','rock']] = 'wraps';
+        //
+        return verb_hash;
+
+      };
 
 Game.prototype.winner = function() {
 
@@ -39,6 +55,8 @@ Game.prototype.winner = function() {
 
     }
 
+  console.log (this.player2.pick + ' ' + this.verbs()[[this.player2.pick,this.player1.pick]] + ' '  + this.player1.pick);
   return this.player2
+
 
 };
